@@ -21,9 +21,9 @@ const fetchData = async (id) => {
         div.classList.add('producto-a')
         div.innerHTML = `
         <div class="card" style="width: 18rem;">
+            <img src="${data.sprites.back_default}" class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">${id}</h5>
-            <button class="btn btn-primary">Cambiemos al Pokemon</button>
+            <h5 class="card-title">${data.species.name}</h5>
             </div>
         </div>  
         `
